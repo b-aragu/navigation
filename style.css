@@ -1,0 +1,156 @@
+html, body {
+    height: 100vh;
+    letter-spacing: .2em;
+    font-style: Tahoma;
+  }
+  .contant{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-height: 100vh;
+    
+  }
+  .contant span {
+    color: teal;
+    transform: translate(-110vh, 40vh);
+  }
+  .contant span a {
+    text-decoration: none;
+    color: #333333;
+    font-family: Tahoma;
+    letter-spacing: .2em;
+  }
+  nav {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent; 
+  }
+  nav a:hover {
+    background: linear-gradient(black 0 0) center bottom / 100% 2px no-repeat;
+    background-size: 50% 1px;  
+    cursor: url(icons8-hand-cursor.svg);
+    
+  }
+/* Define the wobble animation */
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-15deg); }
+  30% { transform: rotate(15deg); }
+  45% { transform: rotate(-15deg); }
+  60% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+  90% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Apply the animation to the image when hover is clicked */
+.wobble-image:hover {
+  animation: wobble 1s ease-in-out;
+}
+.baragu
+{
+  letter-spacing: .2em;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 40px;
+  font-weight: 10px;
+  translate: 100vh;
+  width: 100vh;
+  
+}
+.baragu a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.mist {
+ display: none;
+ width: 40px;
+ transform: translate(-190px , 20px);
+}
+
+.baragu:hover .mist {
+  display: inline;
+  cursor: url(icons8-hand-cursor.svg);
+}
+/* Set the base font size to be 16px */
+html {
+  font-size: 16px;
+}
+
+/* Use rem units for all other font sizes */
+body {
+  font-size: 1rem;
+}
+
+/* Use vw/vh units to adjust sizes relative to viewport */
+header, footer {
+  width: 100vw;
+}
+
+/* Use percentages to make elements adjust to parent width */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Use media queries to adjust layout for different screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Adjust layout for mobile devices */
+  header {
+    font-size: 1.2rem;
+  }
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust layout for tablets */
+  header {
+    font-size: 1.4rem;
+  }
+  main {
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Adjust layout for desktops */
+  header {
+    font-size: 1.6rem;
+  }
+  main {
+    width: 70%;
+    padding: 3rem;
+  }
+}
